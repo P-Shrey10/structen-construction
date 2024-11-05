@@ -1,0 +1,82 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "label": "Construction Projects",
+            "image": "",
+            "describe": "",
+            "detail": "",
+            "project": [
+                {
+                    "title": "Residential Building for Mrs. Srijana Manandhar at Sanepa",
+                    "project_title": "Construction of Residential Building for Mrs. Srijana Manandhar at Sanepa",
+                    "location": "Sanepa, Lalitpur",
+                    "project_duration": "12 Months",
+                    "start_date": "2074-05-01",
+                    "project_cost": "NPR 7.5 million",
+                    "contractor": "Structen Construction Pvt. Ltd.",
+                    "pictures": [
+                        "https://example.com/picture1.jpg",
+                        "https://example.com/picture2.jpg",
+                        "https://example.com/picture3.jpg"
+                    ]
+                },
+                {
+                    "title": "Residential Building for Mrs. Kamala Babu at Nakhhu",
+                    "project_title": "Construction of Residential Building for Mrs. Kamala Babu at Nakhhu",
+                    "location": "Nakhhu, Lalitpur",
+                    "project_duration": "12 months",
+                    "start_date": "2075-01-16",
+                    "project_cost": "NPR 8.1 million",
+                    "contractor": "Structen Construction Pvt. Ltd.",
+                    "pictures": [
+                        "https://example.com/picture1.jpg",
+                        "https://example.com/picture2.jpg",
+                        "https://example.com/picture3.jpg"
+                    ]
+                },
+                {
+                    "title": "Residential Building for Mrs. Mithila Karmacharya at Imadole",
+                    "project_title": "Construction of Residential Building for Mrs. Mithila Karmacharya at Imadole",
+                    "location": "Imadole, Lalitpur",
+                    "project_duration": "10 months",
+                    "start_date": "2075-03-25",
+                    "project_cost": "NPR 7.5 million",
+                    "contractor": "Structen Construction Pvt. Ltd.",
+                    "pictures": [
+                        "https://example.com/picture1.jpg",
+                        "https://example.com/picture2.jpg",
+                        "https://example.com/picture3.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "label": "Architectural Modelling",
+            "image": "",
+            "describe": "",
+            "detail": "",
+            "project": []
+        },
+        {
+            "id": "3",
+            "label": "Construction Management",
+            "image": "",
+            "describe": "",
+            "detail": "",
+            "project": [
+                {
+                    "title": "Digbijay Paint Industry Pvt. Ltd.",
+                    "project_title": "Construction of Factory Building of Digbijay Paint Industry Pvt. Ltd.",
+                    "location": "Chayanpur, Parsa.",
+                    "project_duration": "12 months",
+                    "start_date": "",
+                    "project_cost": "NPR 73.9 million",
+                    "contractor": "ENCIVIL Construction Pvt. Ltd.",
+                    "pictures": []
+                }
+            ]
+        }
+    ]
+}
