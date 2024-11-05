@@ -1,0 +1,32 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "Er. Sanjay Babu Raghubanshi",
+      "image": "",
+      "title": "CEO",
+      "detail": ""
+    },
+    {
+      "id": 2,
+      "name": "Pragya Pradhananga Raghubanshi",
+      "image": "",
+      "title": "CFO",
+      "detail": ""
+    },
+    {
+      "id": 3,
+      "name": "Dikshya Pradhananga Shrestha",
+      "image": "",
+      "title": "Site Engineer",
+      "detail": ""
+    },
+    {
+      "id": 4,
+      "name": "Shrey Pradhananga",
+      "image": "",
+      "title": "Software Engineer",
+      "detail": ""
+    }
+  ]
+}
