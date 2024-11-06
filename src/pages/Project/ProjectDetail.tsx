@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
-import projectsData from "./project.json"; // Import your project data
+import { useState, useEffect } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/outline';
+import projectsData from "./project.json";
 
-// Define the types for your project data
 interface Project {
   id: string;
   label: string;
@@ -20,18 +21,77 @@ interface Project {
   }[];
 }
 
-// Extract projects from the imported data
-const projects: Project[] = projectsData.projects; // Accessing the correct structure
+const ImageCarousel = ({ images }: { images: string[] }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => 
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 4000);
+
+    return () => clearInterval(timer);
+  }, [images.length]);
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  return (
+    <div className="relative w-full h-96">
+      <div className="absolute inset-0">
+        <img
+          src={images[currentIndex]}
+          alt={`Project Image ${currentIndex + 1}`}
+          className="w-full h-full object-cover rounded-lg"
+        />
+      </div>
+      
+      {/* Navigation buttons */}
+      <button
+        onClick={goToPrevious}
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition-colors"
+      >
+        <ChevronLeftIcon className="w-6 h-6" />
+      </button>
+      
+      <button
+        onClick={goToNext}
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/75 transition-colors"
+      >
+        <ChevronRightIcon className="w-6 h-6" />
+      </button>
+
+      {/* Dots indicator */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              currentIndex === index ? "bg-white w-4" : "bg-white/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const ProjectDetail = () => {
-  const { id } = useParams<{ id: string | undefined }>(); // Get the project ID from URL parameters
-
-  // Check if id is defined
+  const projects: Project[] = projectsData.projects;
+  const { id } = useParams<{ id: string | undefined }>();
   const projectId = id ? id : null;
-
-  // Find the project by ID
-  const project =
-    projectId !== null ? projects.find((p) => p.id === projectId) : undefined;
+  const project = projectId !== null ? projects.find((p) => p.id === projectId) : undefined;
 
   if (!project) {
     return <div>Project not found.</div>;
@@ -39,17 +99,11 @@ const ProjectDetail = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-50">
-      {" "}
-      {/* Center the container */}
       <div className="flex flex-col items-center max-w-4xl w-full mx-auto p-8">
-        {" "}
-        {/* Center content and set max width */}
         <h1 className="text-3xl font-bold mb-4">{project.label}</h1>
-        <div className="grid grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 gap-8 w-full">
           {project.project.map((item, index) => (
             <div key={index} className="bg-white shadow-lg p-4 rounded-lg">
-              {" "}
-              {/* Add shadow for better visibility */}
               <h2 className="text-xl font-bold mb-2">{item.project_title}</h2>
               <p className="mb-2">
                 <strong>Location:</strong> {item.location}
@@ -63,20 +117,11 @@ const ProjectDetail = () => {
               <p className="mb-2">
                 <strong>Cost:</strong> {item.project_cost}
               </p>
-              <p className="mb-2">
+              <p className="mb-4">
                 <strong>Contractor:</strong> {item.contractor}
               </p>
               {item.pictures.length > 0 && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {item.pictures.map((picture, picIndex) => (
-                    <img
-                      key={picIndex}
-                      src={picture}
-                      alt={`Project Image ${picIndex + 1}`}
-                      className="rounded-lg shadow-md"
-                    />
-                  ))}
-                </div>
+                <ImageCarousel images={item.pictures} />
               )}
             </div>
           ))}
