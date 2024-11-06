@@ -3,7 +3,7 @@
         {
             "id": 1,
             "label": "Construction Projects",
-            "image": "https://example.com/images/construction-projects.jpg",
+            "image": "/Service/Construction_Projects_Service.jpg",
             "describe": "We offer comprehensive construction services tailored to meet your project needs. Our skilled team ensures quality workmanship at affordable prices, making your vision a reality.",
             "detail": "From residential homes to commercial buildings, we handle projects of all sizes. Our services include site preparation, structural work, and final touches, ensuring every aspect is completed to perfection.",
             "service": [
@@ -92,7 +92,7 @@
         {
             "id": 2,
             "label": "Architectural Services",
-            "image": "https://example.com/images/architectural-services.jpg",
+            "image": "/Service/Architectural_Services_service.jpg",
             "describe": "Our architectural services encompass innovative designs and detailed drawings. We guide you through the process, from concept to completion, ensuring compliance with all regulations.",
             "detail": "We specialize in creating functional and aesthetically pleasing designs. Our services include concept development, detailed architectural drawings, and assistance with municipality submissions for permits.",
             "service": [
@@ -133,7 +133,7 @@
         {
             "id": 3,
             "label": "Construction Management",
-            "image": "https://example.com/images/construction-management.jpg",
+            "image": "/Service/Construction_Management_Service.jpg",
             "describe": "Effective construction management is crucial for project success. Our experts provide oversight, ensuring that timelines and budgets are adhered to while maintaining the highest quality standards.",
             "detail": "We offer comprehensive project management services, including planning, coordination, and execution of construction projects. Our team ensures seamless communication between stakeholders and timely delivery of milestones.",
             "service": [
