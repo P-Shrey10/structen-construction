@@ -1,4 +1,5 @@
 import About from "../pages/About/About";
+import Contact from "../pages/Contact/Contact";
 import Home from "../pages/Home/Home";
 import Partner from "../pages/Partner/Partner";
 import Project from "../pages/Project/Project";
@@ -14,6 +15,7 @@ const All = () => {
       <Project />
       <Partner />
       <Team />
+      <Contact/>
     </>
   );
 };

@@ -11,8 +11,8 @@ interface Team {
 const Team = () => {
   const teams: Team[] = teamData.teams;
   return (
-    <div className="flex flex-col items-center p-4">
-      <h1 className="text-center text-3xl font-bold mb-6">Team</h1>
+    <div className="flex flex-row flex-wrap justify-center p-4">
+      <h1 className="w-full text-center text-3xl font-bold mb-6">Team</h1>
       {teams.map((team) => {
         return (
           <div
