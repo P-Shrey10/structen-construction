@@ -18,7 +18,7 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
 
     // Replace with your EmailJS user ID and service ID
-    emailjs.send('service_hmavyns', 'template_pd7s5vh', formData, 'dE5pbybsxUFDjVDHC')
+    emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, formData, import.meta.env.VITE_USER_ID)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         // Reset form after successful submission
@@ -32,7 +32,7 @@ const ContactForm: React.FC = () => {
     <div className="flex flex-col items-center p-4">
       <h1 className="text-center text-3xl font-bold mb-6">Inquiries</h1>
       <p className="text-center text-lg mb-6">
-        For any inquiries, questions or commendations, please fill out the following form.
+        For any inquiries, questions, please fill out the following form.
       </p>
       <form onSubmit={handleSubmit} className="w-full max-w-md">
         <div className="mb-4">

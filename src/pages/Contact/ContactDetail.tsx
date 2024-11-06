@@ -1,10 +1,21 @@
+import { MapIcon, MailIcon, PhoneIcon } from "@heroicons/react/outline";
+
 const ContactDetail = () => {
   return (
     <div className="p-4 text-gray-800">
       <h2 className="text-2xl font-bold mb-4">Office</h2>
-      <p className="mb-2">Bhaisepati, Lalitpur, Nepal</p>
-      <p className="mb-2">construction.structen@gmail.com</p>
-      <p className="mb-6">Mob: +977 9841470208</p>
+      <div className="flex items-center mb-2">
+        <MapIcon className="h-5 w-5 text-orange-500 mr-2" />
+        <p>Bhaisepati, Lalitpur, Nepal</p>
+      </div>
+      <div className="flex items-center mb-2">
+        <MailIcon className="h-5 w-5 text-orange-500 mr-2" />
+        <p>construction.structen@gmail.com</p>
+      </div>
+      <div className="flex items-center mb-6">
+        <PhoneIcon className="h-5 w-5 text-orange-500 mr-2" />
+        <p>Mob: +977 9841470208</p>
+      </div>
 
       <h2 className="text-2xl font-bold mb-4">Employment</h2>
       <p>
