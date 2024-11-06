@@ -3,7 +3,7 @@
         {
             "id": "1",
             "label": "Construction Projects",
-            "image": "",
+            "image": "/Project/Construction_Projects_Project.jpg",
             "describe": "",
             "detail": "",
             "project": [
@@ -16,9 +16,17 @@
                     "project_cost": "NPR 7.5 million",
                     "contractor": "Structen Construction Pvt. Ltd.",
                     "pictures": [
-                        "https://example.com/picture1.jpg",
-                        "https://example.com/picture2.jpg",
-                        "https://example.com/picture3.jpg"
+                        "/Project/Srijana_Manandhar/01.png",
+                        "/Project/Srijana_Manandhar/02.png",
+                        "/Project/Srijana_Manandhar/03.png",
+                        "/Project/Srijana_Manandhar/04.png",
+                        "/Project/Srijana_Manandhar/05.png",
+                        "/Project/Srijana_Manandhar/06.png",
+                        "/Project/Srijana_Manandhar/07.png",
+                        "/Project/Srijana_Manandhar/08.png",
+                        "/Project/Srijana_Manandhar/09.png",
+                        "/Project/Srijana_Manandhar/10.png",
+                        "/Project/Srijana_Manandhar/11.png"
                     ]
                 },
                 {
@@ -30,9 +38,34 @@
                     "project_cost": "NPR 8.1 million",
                     "contractor": "Structen Construction Pvt. Ltd.",
                     "pictures": [
-                        "https://example.com/picture1.jpg",
-                        "https://example.com/picture2.jpg",
-                        "https://example.com/picture3.jpg"
+                        "/Project/Kamala_Babu/01.png",
+                        "/Project/Kamala_Babu/02.png",
+                        "/Project/Kamala_Babu/03.png",
+                        "/Project/Kamala_Babu/04.png",
+                        "/Project/Kamala_Babu/05.jpg",
+                        "/Project/Kamala_Babu/06.jpg",
+                        "/Project/Kamala_Babu/07.jpg",
+                        "/Project/Kamala_Babu/08.jpg",
+                        "/Project/Kamala_Babu/09.jpg",
+                        "/Project/Kamala_Babu/10.jpg",
+                        "/Project/Kamala_Babu/11.jpg",
+                        "/Project/Kamala_Babu/12.jpg",
+                        "/Project/Kamala_Babu/13.jpg",
+                        "/Project/Kamala_Babu/14.jpg",
+                        "/Project/Kamala_Babu/15.jpg",
+                        "/Project/Kamala_Babu/16.jpg",
+                        "/Project/Kamala_Babu/17.jpg",
+                        "/Project/Kamala_Babu/18.jpg",
+                        "/Project/Kamala_Babu/19.jpg",
+                        "/Project/Kamala_Babu/20.jpg",
+                        "/Project/Kamala_Babu/21.jpg",
+                        "/Project/Kamala_Babu/22.jpg",
+                        "/Project/Kamala_Babu/23.jpg",
+                        "/Project/Kamala_Babu/24.jpg",
+                        "/Project/Kamala_Babu/25.jpg",
+                        "/Project/Kamala_Babu/26.jpg",
+                        "/Project/Kamala_Babu/27.jpg",
+                        "/Project/Kamala_Babu/28.jpg"
                     ]
                 },
                 {
@@ -44,9 +77,7 @@
                     "project_cost": "NPR 7.5 million",
                     "contractor": "Structen Construction Pvt. Ltd.",
                     "pictures": [
-                        "https://example.com/picture1.jpg",
-                        "https://example.com/picture2.jpg",
-                        "https://example.com/picture3.jpg"
+                        "/Project/Mithila_Karmacharya/01.png"
                     ]
                 }
             ]
@@ -54,7 +85,7 @@
         {
             "id": "2",
             "label": "Architectural Modelling",
-            "image": "",
+            "image": "/Project/Architectural_Services_Project.jpg",
             "describe": "",
             "detail": "",
             "project": []
@@ -62,7 +93,7 @@
         {
             "id": "3",
             "label": "Construction Management",
-            "image": "",
+            "image": "/Project/Construction_Management_Project.jpg",
             "describe": "",
             "detail": "",
             "project": [
