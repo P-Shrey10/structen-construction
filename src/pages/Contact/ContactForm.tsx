@@ -9,8 +9,6 @@ const ContactForm: React.FC = () => {
     message: '',
   });
 
-  const [submitted, setSubmitted] = useState(false);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -25,8 +23,6 @@ const ContactForm: React.FC = () => {
         console.log('SUCCESS!', response.status, response.text);
         // Reset form after successful submission
         setFormData({ name: '', phone: '', subject: '', message: '' });
-        setSubmitted(true); // Trigger airplane animation on success
-        setTimeout(() => setSubmitted(false), 5000); // Reset airplane animation after 5 seconds
       }, (err) => {
         console.error('Failed to send email. Error: ', err);
       });
@@ -97,34 +93,6 @@ const ContactForm: React.FC = () => {
           Send
         </button>
       </form>
-
-      {/* Airplane flying animation on successful submission */}
-      {submitted && (
-        <div className="relative mt-6">
-          <div className="airplane">
-            ✈️
-          </div>
-        </div>
-      )}
-
-      <style jsx>{`
-        .airplane {
-          font-size: 50px;
-          animation: fly 5s linear infinite;
-        }
-
-        @keyframes fly {
-          0% {
-            transform: translateX(0) translateY(0);
-          }
-          50% {
-            transform: translateX(200px) translateY(-100px);
-          }
-          100% {
-            transform: translateX(400px) translateY(0);
-          }
-        }
-      `}</style>
     </div>
   );
 };
