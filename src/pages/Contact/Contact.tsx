@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <div className="flex flex-col items-center p-4">
-      <h1 className="text-center text-3xl font-bold mb-6">Contact</h1>
+      <h1 className="text-orange-500 text-center text-3xl font-bold mb-6">Contact</h1>
       <div className="flex flex-row space-x-8 w-full max-w-6xl">
         {/* Contact Form */}
         <div className="w-1/2">

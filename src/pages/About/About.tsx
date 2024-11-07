@@ -3,11 +3,11 @@ import AboutSVG from "./AboutSVG";
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-96 bg-gray-50 p-4 sm:p-8 w-full">
-      <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-4 sm:mb-6">
+      <h1 className="text-3xl sm:text-4xl font-bold text-center text-orange-500 mb-4 sm:mb-6">
         About Us
       </h1>
 
-      <div className="flex flex-col md:flex-row items-center justify-center w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full border-l-2 border-b-2 border-r-2  border-orange-500 rounded-2xl">
         <div className="flex flex-col w-full md:w-2/3 p-4 sm:p-8">
           <p className="text-base sm:text-lg text-gray-600 leading-relaxed text-justify">
             We offer ideas, construction deals, and house plans based on

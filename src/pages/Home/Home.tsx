@@ -1,9 +1,5 @@
 import BackgroundImage from "../../assets/background_image.jpg";
-import {
-  SparklesIcon,
-  CollectionIcon,
-  PhoneIcon,
-} from "@heroicons/react/outline";
+import { CollectionIcon, PhoneIcon } from "@heroicons/react/outline";
 
 const Home = () => {
   return (
@@ -21,7 +17,7 @@ const Home = () => {
         {/* Content */}
         <div className="relative h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 animate-fade-in">
           <div className="mb-12 flex items-center space-x-3 transform hover:scale-105 transition-transform duration-300">
-            <SparklesIcon className="h-12 w-12 text-orange-500 animate-pulse" />
+            <i className="fas fa-hammer mr-2 h-18 w-18 text-3xl text-orange-500 animate-pulse"></i>
             <h2 className="text-3xl font-extrabold text-white tracking-tight">
               STRUCTEN CONSTRUCTION
             </h2>
@@ -48,8 +44,8 @@ const Home = () => {
                 <span className="text-lg">View Our Projects</span>
               </button>
               <button className="group px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-lg transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                <PhoneIcon className="w-5 h-5 mr-3 transition-transform duration-300 group-hover:rotate-12" />
-                <span className="text-lg">Contact Us</span>
+                <PhoneIcon className=" text-orange-500 w-5 h-5 mr-3 transition-transform duration-300 group-hover:rotate-12" />
+                <span className="text-lg text-orange-500">Contact Us</span>
               </button>
             </div>
           </div>

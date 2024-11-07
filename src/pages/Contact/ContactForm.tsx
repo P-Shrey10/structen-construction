@@ -30,7 +30,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center p-4">
-      <h1 className="text-center text-3xl font-bold mb-6">Inquiries</h1>
+      <h1 className="border-b-2 border-orange-500 flex justify-center pb-1 w-full text-center text-3xl font-bold mb-6">Inquiries</h1>
       <p className="text-center text-lg mb-6">
         For any inquiries, questions, please fill out the following form.
       </p>
@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
         >
           Send
         </button>
