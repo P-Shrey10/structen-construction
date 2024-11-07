@@ -34,7 +34,7 @@ const ContactForm: React.FC = () => {
       <p className="text-center text-lg mb-6">
         For any inquiries, questions, please fill out the following form.
       </p>
-      <form onSubmit={handleSubmit} className="w-full max-w-md">
+      <form onSubmit={handleSubmit} className="w-full max-w-md flex flex-col">
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
             Name
@@ -86,12 +86,14 @@ const ContactForm: React.FC = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           />
         </div>
-        <button
-          type="submit"
-          className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Send
-        </button>
+        <div className="flex justify-end">
+          <button
+            type="submit"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+          >
+            Send
+          </button>
+        </div>
       </form>
     </div>
   );
